@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 
+console.log(process.env.TOKENS);
+
 export async function GET(req, { params }) {
   const { id } = params;
   const { searchParams } = new URL(req.URL);
